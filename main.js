@@ -12,7 +12,6 @@ document.getElementById('retryButton').addEventListener('click',() => {
 
 let BGMusic = new Audio('Audio/FallOfMaples_OST.mp3')
 BGMusic.volume = 0.3
-BGMusic.play()
 
 function showLetter() {
     document.getElementById('letter').classList.remove('unshown')
@@ -42,6 +41,9 @@ function changeScene() {
         }, 250)
     } else if (typeof(sequence[currentScene]) == 'function') {
         sequence[currentScene]()
+    }
+    if (sequence[currentScene] == 'Katheryne') {
+        BGMusic.play()
     }
     if (['Raiden1','Raiden2','Raiden4','Raiden5'].includes(sequence[currentScene])) {
         audios[sequence[currentScene]].play()

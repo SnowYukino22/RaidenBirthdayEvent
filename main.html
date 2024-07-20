@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Happy Birthday Mazie!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section" id="login">
+            <h1>An Eternity's Happiness</h1>
+            <form onsubmit="return false">
+                <input type="text" class="text" id="UIDField" placeholder="Enter your UID">
+            </form>
+            <div class="button" id="loginButton"><h2>Enter</h2></div>
+        </div>
+        <div id="bg-blur"></div>
+        <div id="image">
+            <img id="sceneBack" src="Images/Katheryne.jpg">
+            <img id="sceneFront" src="Images/KatheryneBG.jpg">
+        </div>
+        <div class="section unshown" id="letter">
+            <h2>
+                Dear Mazelyn,<br><br>
+                Meet me at Tenshukaku. I will be waiting.<br><br><br><br>
+                Raiden Ei
+            </h2>
+            <div class="button" id="navigateButton"><h2>&#9671 Navigate</h2></div>
+        </div>
+        <div class="section unshown" id="loginFail">
+            <h2>
+                This event is not for you.
+            </h2>
+            <div class="button" id="retryButton"><h2>Retry</h2></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

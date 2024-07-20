@@ -48,6 +48,11 @@ function changeScene() {
     if (['Raiden1','Raiden2','Raiden4','Raiden5'].includes(sequence[currentScene])) {
         audios[sequence[currentScene]].play()
     }
+    if (currentScene > sequence.length) {
+        if (typeof(sequence[currentScene+1]) == 'string') {
+            document.getElementById('buffer').src = `Images/${sequence[currentScene+1]}`
+        }
+    }
 }
 
 function startGame() {
